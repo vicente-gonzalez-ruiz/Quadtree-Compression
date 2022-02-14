@@ -157,7 +157,7 @@ class QuadTree():
 
 if __name__ == '__main__':
     #image_path = "./images/eye.jpg"
-    image_path = "/home/alpharaoh/Pictures/mountain.jpg"
+    image_path = "/home/vruiz/MRVC/images/lena_color/000.png"
 
     # load image
     image = Image.open(image_path)
@@ -169,9 +169,9 @@ if __name__ == '__main__':
     # create image with custom depth
     depth = 7
     image = quadtree.create_image(depth, show_lines=False)
-    quadtree.create_gif("mountain_quadtree.gif", show_lines=True)
+    quadtree.create_gif("lena_color.gif", show_lines=True)
     
     # show image
     # image.show()
 
-    image.save("mountain_quadtree.jpg")
+    image.save("lena_color.png")
